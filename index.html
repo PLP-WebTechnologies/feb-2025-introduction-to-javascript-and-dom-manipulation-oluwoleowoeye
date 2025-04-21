@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 8px 16px;
+            margin: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #content-box {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="main-title">DOM Manipulation Demo</h1>
+        <p id="subtitle">Learn how to manipulate the DOM with JavaScript</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Interactive Elements</h2>
+            <div id="content-box">
+                <p id="changeable-text">This text will change when you click the button below.</p>
+                <button id="change-text-btn">Change Text</button>
+                <button id="style-text-btn">Style Text</button>
+            </div>
+
+            <div id="element-control">
+                <button id="toggle-element-btn">Toggle Special Message</button>
+                <div id="special-message" style="display: none;">
+                    <p>This is a special message that appears and disappears!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p id="footer-text">© 2025 DOM Manipulation Demo</p>
+        <button id="update-footer-btn">Update Footer</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
